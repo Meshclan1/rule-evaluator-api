@@ -1,5 +1,19 @@
 from flask import Flask, request, jsonify
 from new_schema import PortfolioUpload, ValidationError
+from new_dummy_data import holdings
+import requests
+# Create the payload with the proper structure
+payload = {
+    "holdings": holdings
+}
+
+# Send the POST request
+response = requests.post("http://localhost:5000/upload", json=payload)
+
+# Print the response
+print(response.status_code)
+
+
 
 app = Flask(__name__)
 

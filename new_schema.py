@@ -34,3 +34,4 @@ try:
 except ValidationError as e:
     print("❌ Errors found:")
     print(e)
+
