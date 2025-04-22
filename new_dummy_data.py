@@ -9,4 +9,3 @@ rules = [
     {"type": "currency_blacklist", "currencies": ["JPY"]}
 ]
 
-print(holdings)

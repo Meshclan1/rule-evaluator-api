@@ -1,16 +1,15 @@
-from dotenv import load_dotenv
-import os
+# Build an API endpoint that clients can reach and submit their holdings data as a JSON payload. 
+# The endpoint should evaluate each incoming holding against defined rules
+# If there are violations, then return a list of these violations
 
-load_dotenv()
+#Pseudo code:
+# for each holding:
+#    for each rule:
+#        if the holding violates the rule:
+#            add to violations list
 
-database_url = os.getenv("TEST")
-print(database_url)
 
-# This is a test file to ensure things are working!
-# if len(database_url) != 7 or database_url[0:7] != "sqlite:":
-#    print("database url is not valid")
-#else:
-#    print("database url is valid")
-#    print("This is a test file to ensure things are working!")
-    
-    
+# ✅ Rules:
+#    isin must be a 12-character string
+#    value must be a positive number
+#    currency must be one of: ["USD", "GBP", "EUR", "JPY"]

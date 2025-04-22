@@ -1,6 +1,5 @@
 from new_dummy_data import holdings, rules
 
-
 def check_compliance(holdings, rules):
     violations = []
 

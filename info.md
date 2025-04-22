@@ -1,0 +1,5 @@
+# objective
+
+## pseudocode
+
+- lorem ipsum
