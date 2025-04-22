@@ -1,16 +1,5 @@
 from dotenv import load_dotenv
 import os
-from holdings import Holding, VALID_CURRENCIES 
-
-
-new_holding = Holding(
-    isin="US0378331005",  # 12 characters as required
-    name="Apple Inc",
-    value=150.75,         # Positive value as required
-    currency="USD"        # Must be one of the VALID_CURRENCIES
-)
-print(new_holding)
-print(VALID_CURRENCIES)
 
 load_dotenv()
 
