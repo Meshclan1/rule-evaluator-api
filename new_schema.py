@@ -25,13 +25,12 @@ class Holding(BaseModel):
         return v
 
 class PortfolioUpload(BaseModel):
-    holdingingo: List[Holding]
+    holdings: List[Holding]
     
 
 try:
-    portfolio = PortfolioUpload(holdingingo=holdings)
-    print(portfolio)
-    print("✅ All holding values are valid!")
+    portfolio = PortfolioUpload(holdings=holdings)
+    print("✅ All holdings are valid!")
 except ValidationError as e:
     print("❌ Errors found:")
     print(e)
